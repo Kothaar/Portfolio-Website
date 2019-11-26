@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,500,700|Lato:400,700|Roboto:400,500|Source+Code+Pro|Source+Serif+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, main {
+    height: 100vh;
+    font-size: 21px;
+    font-family: 'Source Sarif Pro';
+}
+
+body {
+    font-size: 2em;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+    margin: 0;
+    justify-content: center;
+}
+
+main{
+    /* https://www.pexels.com/photo/computer-keyboard-34153/ */
+    background-size: cover;
+
+}
+
+.frosted-glass {
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 .5em 1em rgba(0,0,0,.5);
+
+}
+
+.frosted-glass::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: inherit;
+    box-shadow: inset 0 0 3000px rgba(00,00,00,.1);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Lato';
+
+}
+
+
+a, h3{
+    background: #fff;
+    background: url(photo-1573867368999-5388ba407550.jpg) no-repeat;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    padding: 1rem;
+}
+h3{
+    font-size: 1.618rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 10px;
+
+}
+a:hover {
+    font-weight: bold;
+
+}
+
+
+
+.header{
+    padding: 0;
+    margin: 0;
+
+}
+.title{
+    width: 100%;
+    top: 35vh; 
+    color: white;
+    max-width: 600;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+.box{
+    background: rgba( 29, 31, 32);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.content{
+    width: 100%;
+    color: white;
+    max-width: 600;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 10vh;
+
+}
+.pic {
+    height: 40vh;
+    background: url('pexels-photo.jpg') center fixed no-repeat #222222;
+
+}
+
+.nav-right{
+    font-size: 1rem; 
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+    
+
+}
+
+
+.nav-left{
+    justify-content: left;
+}
+
